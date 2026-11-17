@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Magikarp's Pond - GigaPet</title>
+  <meta name="description" content="A Magikarp virtual pet game">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Load jQuery before our JavaScript file -->
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Magikarp's Pond</h1>
+    <p>Take care of your own Magikarp</p>
+  </header>
+
+  <main>
+    <section class="pet-image-container">
+      <!-- Replace this path with your Magikarp image -->
+      <img class="pet-image" src="images/magikarp.png"
+           alt="Magikarp Pokemon">
+    </section>
+
+    <section class="dashboard">
+      <h2>Pet Information</h2>
+
+      <div>Name: <strong><span class="name"></span></strong></div>
+      <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+      <div>Happiness: <strong><span class="happiness"></span> points</strong></div>
+
+      <!-- Displays a message after clicking a button -->
+      <p class="pet-message" style="display: none;"></p>
+
+      <div class="button-container">
+        <button class="treat-button">Treat</button>
+        <button class="play-button">Play</button>
+        <button class="exercise-button">Exercise</button>
+
+        <!-- New action added for Project 2 -->
+        <button class="splash-button">Splash</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
